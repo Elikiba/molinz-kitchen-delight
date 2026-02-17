@@ -105,8 +105,11 @@ const Index = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="#menu"
-                className="border-2 border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full font-semibold font-body hover:bg-primary-foreground/10 transition-colors text-lg"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="border-2 border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full font-semibold font-body hover:bg-primary-foreground/10 transition-colors text-lg cursor-pointer"
               >
                 View Menu
               </motion.a>
