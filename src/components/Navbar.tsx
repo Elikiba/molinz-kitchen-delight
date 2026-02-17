@@ -33,8 +33,11 @@ const Navbar = () => {
           <Link to="/" className="font-display text-2xl font-bold text-gradient">
             <motion.span
               initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, type: "spring", stiffness: 120 }}
+              animate={{ opacity: 1, y: [0, -4, 0] }}
+              transition={{ 
+                opacity: { duration: 0.6, type: "spring", stiffness: 120 },
+                y: { repeat: Infinity, duration: 2.5, ease: "easeInOut" }
+              }}
               className="inline-block"
             >
               {"Molinz Kitchen".split("").map((char, i) => (

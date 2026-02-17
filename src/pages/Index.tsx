@@ -288,6 +288,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* MAP */}
+      <section className="py-20 px-6 gradient-dark">
+        <div className="container mx-auto">
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <p className="text-secondary font-body text-sm tracking-[0.2em] uppercase mb-2">Find Us</p>
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-primary-foreground">Our Location</h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <div className="rounded-2xl overflow-hidden shadow-elevated max-w-4xl mx-auto">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63417.51237952!2d5.5503099!3d6.3350396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3a7c3b0b0a1%3A0x3b1b1b1b1b1b1b1b!2sUniversity%20of%20Benin!5e0!3m2!1sen!2sng!4v1234567890"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Molinz Kitchen Location"
+              />
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-6">
         <ScrollReveal>
