@@ -30,28 +30,16 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
-          <Link to="/" className="font-display text-2xl font-bold text-gradient">
+          <Link to="/" className="font-display text-2xl font-bold">
             <motion.span
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: [0, -4, 0] }}
-              transition={{ 
-                opacity: { duration: 0.6, type: "spring", stiffness: 120 },
-                y: { repeat: Infinity, duration: 2.5, ease: "easeInOut" }
-              }}
+              animate={{ y: [0, -5, 0] }}
+              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
               className="inline-block"
             >
-              {"Molinz Kitchen".split("").map((char, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 + i * 0.05, duration: 0.4, type: "spring" }}
-                  className="inline-block"
-                  style={{ display: char === " " ? "inline" : "inline-block" }}
-                >
-                  {char === " " ? "\u00A0" : char}
-                </motion.span>
-              ))}
+              <span className="text-primary-foreground drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}>
+                Molinz{" "}
+              </span>
+              <span className="text-gradient drop-shadow-lg">Kitchen</span>
             </motion.span>
           </Link>
 
