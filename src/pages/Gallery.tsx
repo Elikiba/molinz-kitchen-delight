@@ -3,17 +3,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import ScrollReveal from "../components/ScrollReveal";
 import { X } from "lucide-react";
 
-import jollofRice from "@/assets/jollof-rice.jpg";
-import friedRice from "@/assets/fried-rice.jpg";
-import poundedYam from "@/assets/pounded-yam.jpg";
-import amala from "@/assets/amala.jpg";
-import suya from "@/assets/suya.jpg";
-import ofadaRice from "@/assets/ofada-rice.jpg";
-import whiteRiceStew from "@/assets/white-rice-stew.jpg";
-import pastries from "@/assets/pastries.jpg";
-import pepperSoup from "@/assets/pepper-soup.jpg";
-import restaurantInterior from "@/assets/restaurant-interior.jpg";
-import heroFood from "@/assets/hero-food.jpg";
+const heroFood = "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80";
+const jollofRice = "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80";
+const friedRice = "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80";
+const poundedYam = "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80";
+const amala = "https://images.unsplash.com/photo-1604908556850-8d1f4d4d45ca?auto=format&fit=crop&w=900&q=80";
+const suya = "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80";
+const ofadaRice = "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=900&q=80";
+const whiteRiceStew = "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80";
+const pastries = "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80";
+const pepperSoup = "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80";
+const restaurantInterior = "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80";
 
 const galleryImages = [
   { src: heroFood, caption: "Signature Jollof Rice" },

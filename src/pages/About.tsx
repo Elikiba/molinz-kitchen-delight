@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import ScrollReveal from "../components/ScrollReveal";
 import { Heart, Leaf, Users, Smile, MapPin } from "lucide-react";
-import restaurantInterior from "@/assets/restaurant-interior.jpg";
+
+const restaurantInterior = "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80";
 
 const values = [
   { icon: Leaf, title: "Fresh Ingredients", desc: "Locally sourced, always fresh" },
